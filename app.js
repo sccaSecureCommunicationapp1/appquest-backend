@@ -136,5 +136,8 @@ app.get('/api/cpx_postback', async (req, res) => {
     res.status(200).send('OK');
 });
 
+// ------------------------------------------------------------------
+// BIND SERVER TO PORT 8080 FOR BASICDEPLOY
+// ------------------------------------------------------------------
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, '0.0.0.0', () => console.log(`AppQuest Master System Live on Port ${PORT}`));
