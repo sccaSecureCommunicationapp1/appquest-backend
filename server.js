@@ -129,7 +129,7 @@ app.get('/api/cpx_postback', async (req, res) => {
 });
 
 // ------------------------------------------------------------------
-// SERVER INITIALIZATION
+// SERVER INITIALIZATION (BOUND TO PORT 8080 FOR BASICDEPLOY)
 // ------------------------------------------------------------------
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Production Backend running on port ${PORT}`));
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, '0.0.0.0', () => console.log(`Production Backend running on port ${PORT}`));
