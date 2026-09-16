@@ -1,12 +1,12 @@
 {
   "name": "appquest-backend",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "axios": "^1.6.0"
+    "crypto": "1.0.1"
   }
 }
